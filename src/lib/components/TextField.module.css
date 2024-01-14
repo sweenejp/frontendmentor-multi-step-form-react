@@ -1,0 +1,35 @@
+.label {
+  color: var(--marine-blue);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorMessage {
+  color: var(--strawberry-red);
+  text-align: right;
+}
+
+.input {
+  color: var(--marine-blue);
+  font-weight: 500;
+  padding: 12px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+
+  &:focus {
+    border-color: var(--purplish-blue);
+  }
+}
+
+.error {
+  border-color: var(--strawberry-red);
+}

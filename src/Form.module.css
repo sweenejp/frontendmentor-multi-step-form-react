@@ -1,0 +1,44 @@
+.contentContainer {
+  top: -70px;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 34px;
+}
+
+@media (min-width: 800px) {
+  .flexCenterContainerVert {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .contentFlexWrapper {
+    flex: 1;
+  }
+
+  .contentContainer {
+    position: static;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}

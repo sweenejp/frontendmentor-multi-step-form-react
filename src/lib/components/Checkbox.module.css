@@ -1,0 +1,62 @@
+.label {
+  padding: 16px;
+  border: solid 1px var(--light-gray);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &.selected {
+    background-color: var(--alabaster);
+    border-color: var(--purplish-blue);
+  }
+
+  &:hover {
+    border-color: var(--purplish-blue);
+  }
+}
+
+.input {
+  appearance: none;
+  height: 21px;
+  width: 21px;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px var(--light-gray);
+
+  &:checked {
+    background-color: var(--purplish-blue);
+    background-image: url('/images/icon-checkmark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.labels {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.label--main {
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+
+.label--sublabel {
+  color: var(--purplish-blue);
+  font-weight: 500;
+}
+
+.label--details {
+  color: var(--cool-gray);
+}

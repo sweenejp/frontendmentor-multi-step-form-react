@@ -1,0 +1,70 @@
+.container {
+  padding: 32px;
+  background: url('/images/bg-sidebar-mobile.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  height: 170px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.bullet {
+  border-radius: 50%;
+  border: solid white 1px;
+  color: white;
+  padding: 16px;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    color: var(--marine-blue);
+  }
+}
+
+.stepText {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .container {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    background-image: url('/images/bg-sidebar-desktop.svg');
+    background-position: center;
+    border-radius: 10px;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    min-width: 300px;
+  }
+
+  .stepText {
+    display: block;
+    text-transform: uppercase;
+  }
+  .stepText > .label {
+    color: var(--cool-gray);
+  }
+
+  .stepText > .title {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}

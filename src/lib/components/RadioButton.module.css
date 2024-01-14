@@ -1,0 +1,46 @@
+.label {
+  border: solid 1px var(--light-gray);
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+
+  &.selected {
+    background-color: var(--alabaster);
+    border-color: var(--purplish-blue);
+  }
+
+  &:hover {
+    border-color: var(--purplish-blue);
+  }
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.label--main {
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+
+.label--sublabel {
+  font-size: 14px;
+  color: var(--cool-gray);
+}
+
+.label--details {
+  font-size: 14px;
+  color: var(--marine-blue);
+}
+
+.input {
+  display: none;
+}
