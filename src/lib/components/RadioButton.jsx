@@ -12,6 +12,8 @@ const createLabelClass = (selected) => {
 
 /** @typedef {React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>} InputAttributes */
 
+// NOTE - animating height without a library in react is probably not worth it.
+
 /**
  * @typedef PropsI
  * @property {boolean} selected
