@@ -43,7 +43,7 @@ const initialFormValue = {
 /** @type {{status: 'idle' | 'pending' | 'success', data: FormI | null }} */
 const initialFormSubmission = { status: 'idle', data: null };
 
-const initialStep = 4;
+const initialStep = 1;
 
 /** @type {React.Context<FormContextValueI>} */
 const formContext = createContext({
